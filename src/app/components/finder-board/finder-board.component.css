@@ -1,7 +1,10 @@
 .finder-board {
-    box-sizing: content-box;
+    box-sizing: border-box;
+    width: 96vw;
     display: flex;
     flex-direction: column;
+    border: 1px solid lightgrey;
+    margin: 2vw;
 }
 
 .query-string-row {
@@ -14,11 +17,10 @@
 }
 
 .address-string {
-    font-family: consolas, Courier New;
     padding: .2em;
     font-size: 1.5vmax;
     margin: 0 .4em;
-    width: 80%;
+    width: inherit;
 }
 
 .query-input {

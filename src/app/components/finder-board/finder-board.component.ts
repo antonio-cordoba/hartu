@@ -12,16 +12,22 @@ export class FinderBoardComponent {
 
   currentAddressString = '';
   first: any;
+  found: any;
 
   searchAddressString(searchString: string) {
     console.log(searchString);
     this.positionService.AddressSearch(searchString)
     .subscribe({
       next: info => {
-        if ((info) && (info['data']) && (info['data']['length'] > 0)){
-          this.first = (info as any).data[0];
+        console.log(info);
+        if ((info) && (info['results']) && (info['results']['length'] > 0)){
+          this.first = (info as any).results[0];
+          const gpsSpot = `${this.first?.geometry.location.lat}, ${this.first?.geometry.location.lng}`; 
+          this.found = { 
+            located_address: this.first.formatted_address, 
+            coordinates: gpsSpot
+          };
           console.log(this.first);
-          const gpsSpot = `${this.first?.latitude}, ${this.first?.longitude}`; 
           console.log(gpsSpot);
           navigator.clipboard.writeText(gpsSpot)
           .then(() => null);
