@@ -16,15 +16,19 @@ export class FinderBoardComponent {
   searchAddressString(searchString: string) {
     console.log(searchString);
     this.positionService.AddressSearch(searchString)
-    .subscribe(info => {
-      if ((info) && (info['data']) && (info['data']['length'] > 0)){
-        this.first = (info as any).data[0];
-        console.log(this.first);
-        const gpsSpot = `${this.first?.latitude}, ${this.first?.longitude}`; 
-        console.log(gpsSpot);
-        navigator.clipboard.writeText(gpsSpot)
-        .then(() => null);
-      }
+    .subscribe({
+      next: info => {
+        if ((info) && (info['data']) && (info['data']['length'] > 0)){
+          this.first = (info as any).data[0];
+          console.log(this.first);
+          const gpsSpot = `${this.first?.latitude}, ${this.first?.longitude}`; 
+          console.log(gpsSpot);
+          navigator.clipboard.writeText(gpsSpot)
+          .then(() => null);
+        }
+      }, 
+      error: er => this.first = er,
+      complete: () => null
     });
   }
 
