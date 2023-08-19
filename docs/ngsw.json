@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1692423265326,
+  "timestamp": 1692424542988,
   "index": "/hartu/index.html",
   "assetGroups": [
     {
@@ -54,7 +54,7 @@
     "/hartu/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/hartu/index.html": "602f336059fd37753d8b4339d2031a239c00015b",
     "/hartu/main.68fa85a3805519b3.js": "5e960847ddea99446eab2254e55d6103cedf383d",
-    "/hartu/manifest.webmanifest": "517d842d42b3bb4632e8f3ecadf0b8dd4077a975",
+    "/hartu/manifest.webmanifest": "847accbf1c47bb3511ac81bd0166e63f19a8ab47",
     "/hartu/polyfills.668fa932481a2901.js": "c03e69b059ff7cb9cc54397132a6409123d34f0f",
     "/hartu/runtime.743f0ca5d1506db0.js": "8e76067f03aef570f616600377973f48ab6a6167",
     "/hartu/styles.760a20a942950953.css": "30047de275d74588b1f78a6953fd8461f80af7ec"
