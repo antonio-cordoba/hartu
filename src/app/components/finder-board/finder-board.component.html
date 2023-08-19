@@ -1,0 +1,14 @@
+<div class="finder-board">
+    <div class="query-string-row">
+        <span>Address:</span>
+        <div class="query-input">
+          <input type="text" mat-input class="address-string" #addressString [value]="currentAddressString">
+          <button mat-flat-button aria-label="Search" color="accent" (click)="searchAddressString(addressString.value)">
+            <mat-icon>explore</mat-icon>
+          </button>
+        </div>
+    </div>
+    <div class="query-string-row">
+        <pre>{{first|json}}</pre>
+    </div>
+</div>

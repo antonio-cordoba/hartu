@@ -1,0 +1,26 @@
+.finder-board {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.query-string-row {
+    display: flex;
+    align-items: baseline;
+    padding: .6em;
+    margin: .3em;
+    font-size: 1.5vmax;
+    width: 100%;
+}
+
+.address-string {
+    font-family: consolas, Courier New;
+    padding: .2em;
+    font-size: 1.5vmax;
+    margin: 0 .4em;
+    width: 80%;
+}
+
+.query-input {
+    width: 80%;
+}
