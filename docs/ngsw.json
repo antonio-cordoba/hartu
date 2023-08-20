@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1692484800323,
+  "timestamp": 1692545460259,
   "index": "/hartu/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/hartu/favicon.ico",
         "/hartu/index.html",
-        "/hartu/main.78b474d35f5aa46a.js",
+        "/hartu/main.bf47d5b80e6a2c8f.js",
         "/hartu/manifest.webmanifest",
         "/hartu/polyfills.b852f414c8dadeef.js",
         "/hartu/runtime.d633a4a32c0f9c7d.js",
@@ -52,8 +52,8 @@
     "/hartu/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/hartu/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/hartu/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/hartu/index.html": "5a527b178fbd2f1f8977000cf208b67e4178353b",
-    "/hartu/main.78b474d35f5aa46a.js": "a93135fad66f106d0f936db1c0ef69fac96909e4",
+    "/hartu/index.html": "df4b6715653ed0540f8d4b47ccd3a0e06a35e45d",
+    "/hartu/main.bf47d5b80e6a2c8f.js": "20f81d57da33498c81373fd22547a2b4c232aeb7",
     "/hartu/manifest.webmanifest": "fad4204eb389f84d7069b9db6264ecc715162bcb",
     "/hartu/polyfills.b852f414c8dadeef.js": "196482ad44d04f69f519eaf06a2f4c228ff7a626",
     "/hartu/runtime.d633a4a32c0f9c7d.js": "2ee940ec7a2ed871c6c05c956f8c2c92bbf4c31b",

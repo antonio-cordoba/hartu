@@ -1,10 +1,10 @@
 .finder-board {
     box-sizing: border-box;
-    width: 96vw;
     display: flex;
     flex-direction: column;
     border: 1px solid lightgrey;
-    margin: 2vw;
+    margin: 1vw 0;
+    background-color: slategray;
 }
 
 .query-string-row {
@@ -12,17 +12,49 @@
     align-items: baseline;
     padding: .6em;
     margin: .3em;
-    font-size: 1.5vmax;
+    font-size: 2.5vmax;
     width: 100%;
+
+    &.label {
+        color: oldlace;
+        padding-bottom: 0;
+    }
+
+    &.prediv {
+        color: oldlace;
+        & pre {
+            overflow-x: auto;
+        }
+    }
+
+    &.input {
+        padding: .6em 0;
+        margin: .3em 0;
+        & textarea {
+            padding-left: .6em;
+        }
+    }
+
+    & button
+    {
+        height: 4rem;
+        margin-right: 6rem;
+    }
+
+    & .mat-icon-size {
+        margin-left: .2rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 2.5rem;
+    }
 }
 
 .address-string {
     padding: .2em;
-    font-size: 1.5vmax;
-    margin: 0 .4em;
+    font-size: 2.5vmax;
     width: inherit;
 }
 
 .query-input {
-    width: 80%;
+    width: 100%;
 }

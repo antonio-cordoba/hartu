@@ -1,14 +1,21 @@
 <div class="finder-board">
-    <div class="query-string-row">
+    <div class="query-string-row label">
         <span>Address:</span>
+    </div>    
+    <div class="query-string-row input">
         <div class="query-input">
-          <input type="text" mat-input class="address-string" #addressString [value]="currentAddressString">
-          <button mat-flat-button aria-label="Search" color="accent" (click)="searchAddressString(addressString.value)">
-            <mat-icon>explore</mat-icon>
-          </button>
+            <textarea type="text" mat-input class="address-string" rows="5" #addressString [value]="currentAddressString"></textarea>
         </div>
-    </div>
+    </div>    
     <div class="query-string-row">
+        <button mat-flat-button aria-label="Search" color="accent" (click)="searchAddressString(addressString.value)">
+            <mat-icon class="mat-icon-size">search</mat-icon>
+        </button>
+        <button mat-flat-button aria-label="Search" color="accent" (click)="copyAddress()">
+            <mat-icon class="mat-icon-size">gps_fixed</mat-icon>
+        </button>
+    </div>
+    <div class="query-string-row prediv">
         <pre>{{found|json}}</pre>
     </div>
 </div>
